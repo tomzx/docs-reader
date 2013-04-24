@@ -9,8 +9,8 @@
         <title>{{ Config::get('docs.title', 'Documentation') }}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="{{ path('css/style.css') }}">
-        <script src="{{ path('js/vendor/modernizr-2.6.2.min.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -34,7 +34,7 @@
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{{ path('js/vendor/jquery-1.8.2.min.js') }}"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="{{ asset('js/vendor/jquery-1.8.2.min.js') }}"><\/script>')</script>
         <script src="{{ path('js/vendor/prettify.js') }}"></script>
         <script src="{{ path('js/plugins.js') }}"></script>
         <script src="{{ path('js/main.js') }}"></script>
